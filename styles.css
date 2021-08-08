@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap'); /* font-family: 'Permanent Marker', cursive; */
+@import url('https://fonts.googleapis.com/css2?family=Gothic+A1:wght@300&family=Permanent+Marker&display=swap'); /* font-family: 'Gothic A1', sans-serif; */
+:root{
+    --color-one :rgb(0, 60, 255);
+    --color-two :rgb(248, 37, 37);
+}
+.body{
+    display: flex;
+    flex-direction: column;
+}
+
+.Header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1400px;
+}
+
+.Brand{
+    padding: 1em 0 1em 1em;
+    font-family: 'Gothic A1', sans-serif;
+    font-size: xxx-large;
+    color: var(--color-one);
+    -webkit-text-stroke-width: .2px;
+    -webkit-text-stroke-color: rgb(100, 100, 100);
+}
+.Brand span{
+    color: var(--color-two);
+}
+
+.SignIn{
+    margin: 1em;
+    padding: .4em;
+    border: 2px solid #666;
+    border-radius: 8px;
+    font-family: 'Gothic A1', sans-serif;
+    font-size: x-large;
+    color: var(--color-one);
+    transition: transform 0.15s ease-in-out;
+}
+.SignIn span{
+    color: var(--color-two); 
+}
+.SignIn:hover {
+    transform: scale(1.1);
+
+}
