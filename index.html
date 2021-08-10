@@ -24,7 +24,7 @@
 
     <div class="hero">
       <div class="main"></div>
-      <button class="AddButton">
+      <button class="AddButton"id='addNewBook'>
         <span class="material-icons"> add </span>
       </button>
     </div>
@@ -33,21 +33,21 @@
 
     <div class="addBookForm">
       <div class="newBookForm">
-        <div class="Title">Add New Book</div>
+        <div class="Title Eachfields">Add New Book</div>
 
-        <span class="material-icons">close</span>
+        <span class="material-icons closeIcon Eachfields">close</span>
 
-        <label for="BookTitle">
+        <label for="BookTitle" class="Eachfields">
           Book Name*
           <input
             type="text"
-            id="NameOfBook"
+            id="BookTitle"
             class="Formkontol"
             name="BookTitle"
             placeholder="Title"
           />
         </label>
-        <label for="Author">
+        <label for="Author" class="Eachfields">
           Book Author*
           <input
             type="text"
@@ -57,29 +57,19 @@
             placeholder="Author"
           />
         </label>
-        <label for="Author">
-          Book Author*
-          <input
-            type="text"
-            id="BookAuthor"
-            class="Formkontol"
-            name="BAuthor"
-            placeholder="Author"
-          />
-        </label>
-        <label for="NumberOfPages">
+        <label for="NumberOfPages" class="Eachfields">
           Number Of Pages*
           <input
             type="number"
-            id="BookPageNumber"
+            id="NumberOfPages"
             class="Formkontol"
             name="PageNum"
             placeholder="Number of Pages"
             min="1"
           />
         </label>
-        <label for="BookLanguage">
-          Language*
+        <label for="BookLanguage" class="Eachfields">
+          Language* 
           <input
             type="text"
             id="BookLanguage"
@@ -88,14 +78,18 @@
             placeholder="Language"
           />
         </label>
-        <label for="BookStats">
+        <label for="BookStats" class="Eachfields">
           Book Status*
-          <select name="BookReadStatus" id="ReadStatus">
+          <select name="BookReadStatus" id="BookStats" class="Eachfields">
             <option value="null" disabled="" selected="">Read/Unread</option>
             <option value="true">Read</option>
             <option value="fale">Unread</option>
           </select>
         </label>
+        <div class="ActButtons">
+            <button class="actionButts addBook">Add</button>
+            <button class="actionButts clear">Clear</button>
+          </div>
       </div>
     </div>
   </body>
