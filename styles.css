@@ -114,6 +114,19 @@
   right: 5px;
 }
 
+.closeIcon:hover {
+  border: solid 1px rgb(187, 185, 185);
+  background-color: lightgray;
+  border-radius: 10px;
+  cursor:pointer;
+}
+
+.closeIcon:active{
+  opacity: 300%;
+  transition: 0.5s;
+  transform: translateY(1px);
+}
+
 .Formkontol {
   border: solid 1px lightgray;
   border-radius: 0.25rem;
