@@ -27,15 +27,6 @@ const toggleForm = {
     } else {
       PopUpform.style.visibility = "hidden";
     }
-  },
-
-  clearForm: function () {
-    document.getElementById("BookTitle").value = "";
-    document.getElementById("BookAuthor").value = "";
-    document.getElementById("NumberOfPages").value = "";
-    document.getElementById("BookLanguage").value = "";
-    document.getElementById("BookStats").value = null;
-    console.log(document.getElementById("BookTitle").value);
   }
 };
 
@@ -50,11 +41,13 @@ window.onload = toggleForm.formtoggle;
 
 AddButtons.onclick = toggleForm.formtoggle;
 
+
 //manipulate the x button//
 
 const closebuttonicon = document.querySelector(".closeIcon");
 
 closebuttonicon.onclick = toggleForm.formtoggle;
+
 
 //Manipulate the Submit button
 
@@ -64,20 +57,22 @@ SubmitBookicon.onclick = function () {
   console.log(document.getElementById("BookStats"));
 };
 
+
 //Manipulate Clear button
 
 const ClearButtonIcon = document.querySelector(".clear");
 
-function updateInputValues() {
-    document.getElementById("BookTitle").value = "";
-    document.getElementById("BookAuthor").value = "";
-    document.getElementById("NumberOfPages").value = "";
-    document.getElementById("BookLanguage").value = "";
-    document.getElementById("BookStats").value = null;
-    console.log(document.getElementById("BookTitle").value);
-  }
+function restartInputValues() {
+  document.getElementById("BookTitle").value = "";
+  document.getElementById("BookAuthor").value = "";
+  document.getElementById("NumberOfPages").value = "";
+  document.getElementById("BookLanguage").value = "";
+  document.getElementById("BookStats").value = null;
+}
 
-ClearButtonIcon.addEventListener("click", () => {
-  console.log(document.getElementById("BookTitle").value);
-  updateInputValues() 
-});
+ClearButtonIcon.addEventListener("click", () => {;
+
+restartInputValues();
+}); 
+
+
