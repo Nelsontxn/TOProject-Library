@@ -1,22 +1,27 @@
 //Global Variables
-let SubmitedBookTitle = document.getElementById("BookTitle").value;
-
-let SubmittedBookAuthor = document.getElementById("BookAuthor").value;
-
-let SubmmitedBookpages = document.getElementById("NumberOfPages").value;
-
-let SubmmitedBookLanguage = document.getElementById("BookLanguage").value;
-
-let SubmittedBookStats = document.getElementById("BookStats").value;
 
 let myLibrary = [];
 
 function Book() {
   // the constructor...
+  constructor(title, author, pages, isRead) {
+    this.title = title;
+    this.author = author;
+    this.pages = pages;
+    this.isRead = isRead;
+  }
 }
 
 function addBookToLibrary() {
   // do stuff here
+  const title = document.querySelector('#BookTitle').value;
+  const author = document.querySelector('#BookAuthor').value;
+  const pages = document.querySelector('#NumberOfPages').value;
+  const isRead = document.querySelector('#BookLanguage').value;
+
+  if(title == '' || author == '' || pages == '' || isRead == ''){
+
+  }
 }
 
 //Classes
@@ -71,8 +76,8 @@ function restartInputValues() {
 }
 
 ClearButtonIcon.addEventListener("click", () => {;
-
-restartInputValues();
-}); 
+  restartInputValues();
+  }
+); 
 
 
