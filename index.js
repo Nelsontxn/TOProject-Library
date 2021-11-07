@@ -99,7 +99,7 @@ class UI{
 }
 
 //Dom Maniuplation
-document.addEventListener('DomContentLoaded',UI.displayBooks);
+window.addEventListener('load', UI.displayBooks);
 
 //manipulate the add button below//
 
